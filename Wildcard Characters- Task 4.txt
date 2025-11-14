@@ -1,0 +1,19 @@
+✅ Task 3 — Advanced Level (15 Questions)
+
+Focus: Ranges [ ], exclusions [^ ], complex patterns.
+
+Q1. Fetch employees whose name starts with any letter between A–M.
+Q2. Fetch employees whose name starts with a consonant (NOT vowels).
+Q3. Fetch employees whose name ends with any digit 0–9.
+Q4. Fetch employees whose name contains any vowel at the 3rd position.
+Q5. Fetch employees whose department starts with M, N, or P.
+Q6. Fetch employees whose name does NOT start with A, E, I, O, U.
+Q7. Fetch employees whose email starts with a number.
+Q8. Fetch employees whose job title contains either 'dev' or 'eng'.
+Q9. Fetch employees whose name has at least one uppercase letter in the middle.
+Q10. Fetch employees with names ending in special characters like %, $, # (if data supports).
+Q11. Fetch employees whose name has 'a' in the 2nd or 4th position.
+Q12. Fetch employees whose location starts with ‘B’ and second character is not a vowel.
+Q13. Fetch employees whose name contains exactly one vowel.
+Q14. Fetch employees whose name contains only alphabets (no digits).
+Q15. Fetch employees with patterns matching ‘M%R%T’ (e.g., “M…R…T”).
