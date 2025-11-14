@@ -1,0 +1,20 @@
+Q1. Write a query to fetch all employee names and department names from the table.
+select employee_name, department_name from employee_info2024
+Q2. Write a query to fetch distinct department names from the Employee_info2025 table.
+select distinct( department_name)
+from Employee_info2024
+Q3. Write a query to get all employees who work in the HR department.
+select 
+employee_name, department_name
+From Employee_info2024
+where department_name = 'HR';
+Q4. Write a query to list employees ordered by salary in descending order.
+select 
+employee_id, employee_name, salary
+from Employee_info2024
+ORDER BY Salary DESC;
+Q5. Write a query to select employees whose salary is between 55,000 and 65,000.
+select
+employee_name, salary
+from Employee_info2024
+where salary between 55000 AND 65000; 
