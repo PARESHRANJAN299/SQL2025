@@ -1,0 +1,107 @@
+📘 Task 3 — Advanced Level (15 SQL Questions)
+
+(Still using only SELECT, DISTINCT, WHERE, ORDER BY, AND, OR, NOT, BETWEEN, NULL, UPDATE, DELETE, INSERT INTO, TOP)
+
+Q1. Write a query to fetch employees who work in HR or Finance, but not in IT.
+Q2. Write a query to fetch all employees whose salary is greater than 60,000 AND location is Bangalore or Chennai.
+Q3. Write a query to list employees whose department_name contains the letter ‘a’.
+Q4. Write a query to find employees whose name has exactly 5 characters.
+Q5. Write a query to fetch employees where the second letter of employee_name is 'r'.
+Q6. Write a query to get employees whose salary is between the minimum and maximum salary of the HR department.
+Q7. Write a query to fetch employees in descending order of salary but only for employees in Delhi.
+Q8. Write a query to return employees whose name starts with 'S' AND salary < 60,000.
+Q9. Write a query to fetch employees whose department_name is NULL.
+Q10. Write a query to fetch employees whose location is NOT 'Mumbai' AND salary > 55,000.
+Q11. Write a query to insert a new employee:
+
+(121, 'Chirag Malhotra', 'HR', 62000, 'Delhi')
+
+Q12. Write a query to update salary = 75000 for employee ID = 110.
+Q13. Write a query to delete the employee whose employee_id = 103.
+Q14. Write a query to fetch the TOP 5 employees with the lowest salaries.
+Q15. Write a query to fetch employees where salary is NOT NULL and department_name starts with 'M'.
+
+
+📘 Task 3 — Advanced Level (15 SQL Questions)
+
+(Still using only SELECT, DISTINCT, WHERE, ORDER BY, AND, OR, NOT, BETWEEN, NULL, UPDATE, DELETE, INSERT INTO, TOP)
+Q1. Write a query to fetch employees who work in HR or Finance, but not in IT.
+select 
+employee_name, department_name
+from employee_info2024
+where department_name in('HR', 'Finance');
+
+Q2. Write a query to fetch all employees whose salary is greater than 60,000 AND location is Bangalore or Chennai.
+SELECT 
+employee_name, location, salary
+from Employee_info2024
+where location in ('Bangalore', 'Chennai') AND SALARY > 60000;
+
+Q3. Write a query to list employees whose department_name contains the letter ‘a’.
+SELECT 
+employee_name, department_name
+FROM Employee_info2024
+WHERE department_name LIKE '%a%';
+Q4. Write a query to find employees whose name has exactly 5 characters.
+select 
+employee_name
+from Employee_info2024
+where employee_name like '_____'
+Q5. Write a query to fetch employees where the second letter of employee_name is 'r'.
+select
+employee_id, employee_name
+from Employee_info2024
+where employee_name like '_r%';
+Q6. Write a query to get employees whose salary is between the minimum and maximum salary of the HR department.
+--MIN and MAX funcation - not learned still now, so now we will skip for this.
+Q7. Write a query to fetch employees in descending order of salary but only for employees in Delhi.
+select 
+employee_name, salary, location
+from Employee_info2024
+WHERE location in ('Delhi')
+order by salary DESC;
+Q8. Write a query to return employees whose name starts with 'S' AND salary < 60,000.
+select 
+employee_name, salary
+from Employee_info2024
+where employee_name like 'S%' AND salary < 60000;
+
+Q9. Write a query to fetch employees whose department_name is NULL.
+SELECT 
+employee_name, department_name
+FROM 
+Employee_info2024
+WHERE department_name IS NULL;
+Q10. Write a query to fetch employees whose location is NOT 'Mumbai' AND salary > 55,000.
+SELECT employee_name, location, salary
+FROM Employee_info2024
+WHERE location  NOT IN ('MUMBAI') AND salary > 55000; 
+Q11. Write a query to insert a new employee:
+
+INSERT INTO employee_info2024 values
+(121, 'Chirag Malhotra', 'HR', 62000, 'Delhi');
+
+insert into employee_info2024 values 
+(122, 'Chirag Malhotra', 'Banking', 62000, 'Delhi');
+Q12. Write a query to update salary = 75000 for employee ID = 110.
+update Employee_info2024
+set salary = 75000
+where employee_id = 110;
+update Employee_info2024
+set salary = 65000
+where employee_id = 114;
+
+Q13. Write a query to delete the employee whose employee_id = 103.
+delete from Employee_info2024
+where employee_id = 114
+Q14. Write a query to fetch the TOP 5 employees with the lowest salaries.
+
+select top 5 employee_name, salary
+from Employee_info2024
+order by salary ASC;
+Q15. Write a query to fetch employees  salary is NOT NULL and department_name starts with 'M'.
+
+SELECT 
+employee_name, salary
+FROM Employee_info2024
+WHERE salary is not Null AND  department_name like 'M%'
