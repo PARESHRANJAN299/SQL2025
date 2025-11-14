@@ -1,0 +1,37 @@
+--TASK 3 – Advanced Beginner (8 Questions)
+Fetch employee_id and employee_name of employees whose salary > 45,000 OR location = 'Delhi'.
+select employee_id, employee_name, salary, location
+from employee_info2024
+where salary > 45000 AND location = 'Delhi'
+Fetch employees whose salary is NOT NULL AND salary < 60,000.
+select employee_name, salary
+from employee_info2024
+where salary is not null AND salary < 60000;
+Fetch distinct manager names of employees whose department = 'Sales'.
+SELECT DISTINCT EMPLOYEE_NAME
+FROM EMPLOYEE_INFO2024
+WHERE DEPARTMENT_NAME IN ('sales')
+Fetch employees whose salary is NOT between 30,000 and 50,000.
+select employee_name, salary
+from employee_info2024
+where salary not between 30000 and 50000
+Fetch top 10 employees ordered by salary descending.
+select top 10 employee_name, salary
+from employee_info2024
+order by salary DESC;
+
+Fetch employees whose department = 'Product' OR location = 'Bangalore'.
+select employee_name, department_name, location
+from employee_info2024
+where department_name = 'product' OR  location = 'Bangalore';
+
+Fetch employees whose salary is NULL OR department_name IS NULL.
+select * 
+from employee_info2024
+where salary is null OR Department_name is null; 
+where salary = 'null' OR Department_name = 'null'; 
+Fetch employees whose salary > 40,000 AND department_name NOT IN ('IT', 'HR').
+
+select employee_name, salary, department_name
+from employee_info2024
+where salary > 40000 AND department_name NOT IN ('IT', 'HR')
