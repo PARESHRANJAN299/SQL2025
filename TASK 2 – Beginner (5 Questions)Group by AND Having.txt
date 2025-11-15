@@ -1,0 +1,21 @@
+🔹 INTERMEDIATE (11–20)
+
+Count employees in each department whose salary > 50,000.
+
+Find the average salary for each department only if avg salary > 45,000 (use HAVING).
+
+Display departments where total salary > 2,00,000.
+
+Show how many employees work under each manager only if more than 2 employees.
+
+Find the max salary in each location where location is not ‘Delhi’.
+
+Find the number of employees in each department sorted by count descending.
+
+Find the sum of salaries for each manager having sum > 1,00,000.
+
+Count employees in each department whose location = ‘Bangalore’.
+
+Group by department and find the difference between max salary and min salary in each department.
+
+Find the department-wise number of employees joining before 2024 (if join_date exists).

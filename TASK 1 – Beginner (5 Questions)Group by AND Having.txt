@@ -1,0 +1,25 @@
+✅ 25 SQL GROUP BY Practice Questions
+
+(Use your table: Employee_info2024)
+
+🔹 EASY (1–10)
+
+Find the count of employees in each department.
+
+Find the average salary of each department.
+
+Find the sum of salary by department.
+
+Find the maximum salary in each department.
+
+Find the minimum salary in each location.
+
+Count the number of employees in each location.
+
+Find total employees under each manager_name.
+
+Find average salary under each manager_name.
+
+Show the total salary paid in each location.
+
+Count employees grouped by job_role.
