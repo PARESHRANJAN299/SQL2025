@@ -1,0 +1,63 @@
+✅ 20 Advanced SQL Questions — ONLY QUESTIONS (No HAVING, No Subquery)
+✅ 25 SQL Questions for Marketing_Data (Beginner → Intermediate → Advanced Beginner)
+🔹 BASIC (1–8)
+
+Fetch all campaigns that used the Facebook channel.
+
+List campaigns where the budget is greater than 70,000.
+
+Fetch campaigns that occurred in the month of December 2024.
+
+Fetch campaigns where spent < budget.
+
+Retrieve campaign names where the channel is 'YouTube'.
+
+Get all campaigns where leads_generated > 1500.
+
+Fetch campaigns where conversions < 150.
+
+Get unique channel names used in the marketing campaigns.
+
+🔹 INTERMEDIATE (9–17)
+
+(GROUP BY allowed, no HAVING)
+
+Count the number of campaigns executed on each channel.
+
+Find the total budget spent per channel.
+
+Find the average spent amount grouped by campaign_name.
+
+Find total leads_generated grouped by channel.
+
+Find maximum conversions for each channel.
+
+Find the sum of budget for each month (use MONTH from campaign_date).
+
+Count campaigns that belong to each year (2024 or 2025).
+
+Get minimum spent amount for each channel.
+
+Count the number of campaigns grouped by campaign_name starting with letter 'S'.
+
+🔹 ADVANCED BEGINNER (18–25)
+
+(Combination of WHERE + GROUP BY + LIKE + range conditions)
+
+Find total budget per channel where budget > 50,000.
+
+Count campaigns per month where leads_generated > 1000.
+
+Find total conversions grouped by channel where campaign_name like '%Sale%'.
+
+Find total spent for each channel where spent BETWEEN 40,000 AND 80,000.
+
+Count campaigns grouped by channel where campaign_name ends with 'Promo'.
+
+Find total leads generated for campaigns that include the word 'Brand' in campaign_name.
+
+Group by channel and list campaigns where conversions > 200.
+
+Find total spent grouped by channel where channel NOT IN ('Facebook', 'YouTube').You're asking exactly the right question — before solving advanced SQL questions, you must have a strong foundation.
+Right now, from your queries, I can see you are good, but some fundamentals are missing (example: confusing WHERE vs HAVING, group-by rules, date handling, aggregates).
+
