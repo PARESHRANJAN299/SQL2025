@@ -1,0 +1,33 @@
+TASK 1 – Beginner (5 Questions)
+
+Fetch employees whose department is 'HR', 'IT', or 'Sales'.
+
+Fetch employees whose salary is between 30,000 and 50,000.
+
+Fetch employees whose location is 'Delhi' or 'Mumbai'.
+
+Fetch employees whose salary is greater than 40,000 AND location = 'Bangalore'.
+
+Fetch employees whose department is NOT IN ('IT', 'HR').
+
+TASK 1 – Beginner (5 Questions)
+Fetch employees whose department is 'HR', 'IT', or 'Sales'.
+select * from 
+Employee_info2024
+where department_name in ('HR', 'IT', 'Sales')
+Fetch employees whose salary is between 30,000 and 50,000.
+select * 
+from Employee_info2024
+where salary between 30000 AND 50000;
+Fetch employees whose location is 'Delhi' or 'Mumbai'.
+select * from Employee_info2024
+where location in ('Delhi', 'Mumbai');
+
+Fetch employees whose salary is greater than 40,000 AND location = 'Bangalore'.
+select
+employee_name, salary, department_name
+from Employee_info2024
+where salary > 40000 AND location = 'Bangalore';
+Fetch employees whose department is NOT IN ('IT', 'HR').
+select * from Employee_info2024
+where not department_name in ('IT', 'HR');

@@ -1,0 +1,45 @@
+TASK 3 – Advanced Beginner (8 Questions)
+
+Fetch employees whose manager_name IN ('Paresh R','Ramesh') AND salary BETWEEN 40,000 AND 60,000.
+
+Fetch employees whose location = 'Delhi' OR location = 'Bangalore' AND salary < 55,000.
+
+Fetch employees whose salary NOT BETWEEN 30,000 AND 50,000 AND department = 'Sales'.
+
+Fetch employees whose department IN ('IT','HR') OR salary > 60,000.
+
+Fetch employees whose location NOT IN ('Chandigarh','Punjab') OR salary < 45,000.
+
+Fetch employees whose salary BETWEEN 35,000 AND 55,000 OR manager_name = 'Himani'.
+
+Fetch employees whose department NOT IN ('Product','Sales') AND salary > 40,000.
+
+Fetch employees whose salary BETWEEN 40,000 AND 60,000 AND (department = 'IT' OR location = 'Delhi').
+
+
+TASK 3 – Advanced Beginner (8 Questions)
+
+Fetch employees whose manager_name IN ('Paresh R','Ramesh') AND salary BETWEEN 40,000 AND 60,000.
+SELECT * FROM Employee_info2024
+WHERE mANAGER_NAME IN ('Paresh R','Ramesh') AND salary  BETWEEN 40000 AND 60000;
+Fetch employees whose location = 'Delhi' OR location = 'Bangalore' AND salary < 55,000.
+SELECT * FROM Employee_info2024
+WHERE (location = 'DELHI' OR location = 'BANGALORE' ) AND salary <55000
+Fetch employees whose salary NOT BETWEEN 30,000 AND 50,000 AND department = 'Sales'.
+SELECT * FROM Employee_info2024
+WHERE department_name IN ('SALES') AND SALARY BETWEEN 30000 AND 50000 ;
+Fetch employees whose department IN ('IT','HR') OR salary > 60,000.
+SELECT * FROM Employee_info2024
+WHERE department_name IN ('IT', 'HR') OR salary > 60000
+Fetch employees whose location NOT IN ('Chandigarh','Punjab') OR salary < 45,000.
+SELECT *  FROM Employee_info2024
+WHERE location NOT IN ('Chandigarh','Punjab') or salary < 45000;
+Fetch employees whose salary BETWEEN 35,000 AND 55,000 OR manager_name = 'Himani'.
+SELECT * FROM Employee_info2024 
+WHERE SALARY BETWEEN 35000 AND 55000 OR MANAGER_NAME = 'HIMANI'
+Fetch employees whose department NOT IN ('Product','Sales') AND salary > 40,000.
+SELECT * FROM Employee_info2024
+WHERE department_name NOT IN ('Product','Sales') AND salary <40000
+Fetch employees whose salary BETWEEN 40,000 AND 60,000 AND (department = 'IT' OR location = 'Delhi').
+SELECT * FROM Employee_info2024
+WHERE salary BETWEEN 40000 AND 60000 AND (department_name = 'IT' OR location = 'DELHI')
