@@ -17,3 +17,14 @@ Q12. Fetch employees whose location starts with ‘B’ and second character is 
 Q13. Fetch employees whose name contains exactly one vowel.
 Q14. Fetch employees whose name contains only alphabets (no digits).
 Q15. Fetch employees with patterns matching ‘M%R%T’ (e.g., “M…R…T”).
+
+2️⃣ Areas to Improve – Focus Areas
+⚠ Pattern Matching – Advanced
+
+Sometimes confusion occurs with negation [^ ] vs NOT LIKE
+
+Exact positional matches (like “exactly one vowel”, “2nd or 4th character”) need more practice
+
+Escaping special characters (%, _) using ESCAPE keyword is new
+
+Tip: Create a small dummy table with 10–15 names and practice queries with all possible patterns.
