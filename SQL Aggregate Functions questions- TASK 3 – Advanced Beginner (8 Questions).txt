@@ -1,0 +1,12 @@
+TASK 1 – Beginner (5 Questions)
+------------------------------
+Find the total number of employees in the table.
+select count (*) from employee_info2024;
+Find the highest salary among all employees.
+select MAX(SALARY) FROM Employee_info2024;
+Find the lowest salary among all employees.
+SELECT MIN(SALARY) FROM Employee_info2024;
+Find the average salary of all employees.
+SELECT AVG(SALARY) FROM Employee_info2024;
+Find the sum of salaries of all employees.
+SELECT SUM(SALARY) FROM Employee_info2024;

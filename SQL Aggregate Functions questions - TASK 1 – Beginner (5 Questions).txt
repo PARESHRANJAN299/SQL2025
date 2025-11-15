@@ -1,0 +1,35 @@
+TASK 3 – Advanced Beginner (8 Questions)
+
+Find the total number of employees whose manager name is 'Paresh R'.
+SELECT  count (employee_name) as total_employee 
+from Employee_info2024
+where manager_name in ('Paresh R');
+Find the maximum salary among employees in 'Product' or 'Technology' departments.
+select MAX(salary) as maximum_salary
+from Employee_info2024
+where department_name in ('Product', 'Technology');
+Find the minimum salary among employees in 'Bangalore'.
+SELECT MAX(SALARY) AS HIGH_SALARY_EMPL_BANGALORE
+FROM Employee_info2024
+WHERE location IN ('BANGALORE');
+Find the sum of salaries for employees whose salary is between 40,000 and 60,000.
+SELECT SUM(SALARY)
+FROM Employee_info2024
+WHERE salary BETWEEN 40000 AND 60000;
+Find the average salary of employees excluding NULL salaries.
+SELECT AVG (SALARY)
+FROM Employee_info2024
+WHERE SALARY IS NOT NULL;
+Find the total number of employees whose name starts with 'P'.
+SELECT COUNT(employee_name)
+from Employee_info2024
+where employee_name like 'P%';
+Find the highest salary among employees not in 'HR' or 'IT' departments.
+select MAX(salary)
+from Employee_info2024
+where department_name not in ('HR','IT');
+Find the sum of salaries of the top 5 highest-paid employees.
+
+SELECT SUM(SALARY) as highest_salary
+FROM Employee_info2024
+order by salary desc;
