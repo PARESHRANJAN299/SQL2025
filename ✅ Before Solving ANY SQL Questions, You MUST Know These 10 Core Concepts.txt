@@ -1,0 +1,165 @@
+✅ Before Solving ANY SQL Questions, You MUST Know These 10 Core Concepts
+1️⃣ SELECT → FROM → WHERE → GROUP BY → ORDER BY (SQL Execution Flow)
+
+Always remember the order:
+
+FROM → WHERE → GROUP BY → SELECT → ORDER BY
+
+
+Why important?
+Because:
+
+WHERE filters rows before grouping
+
+GROUP BY makes groups
+
+HAVING filters groups (you didn't learn it yet)
+
+2️⃣ WHERE ≠ HAVING → MOST COMMON CONFUSION
+
+Since you have NOT learned HAVING yet, remember:
+
+WHERE is used for row conditions
+
+HAVING is used for group conditions
+
+Example you wrote incorrectly earlier:
+
+❌
+
+SELECT SUM(salary)
+FROM emp
+WHERE SUM(salary) > 100000
+
+
+This is wrong because WHERE cannot check aggregate values.
+
+You must use HAVING (later when you learn).
+
+3️⃣ Every Column in SELECT Must Be Either:
+
+✔ Inside an aggregate (COUNT, SUM, AVG, MIN, MAX)
+OR
+✔ Appearing in GROUP BY
+
+Example (correct):
+
+SELECT department, COUNT(*)
+FROM emp
+GROUP BY department;
+
+
+Incorrect example (you had similar mistakes):
+
+❌
+
+SELECT department, COUNT(*), salary
+FROM emp
+GROUP BY department;
+
+
+Because salary is not grouped or aggregated.
+
+4️⃣ NULL Handling (VERY IMPORTANT)
+
+Before advanced SQL, know:
+
+NULL means unknown
+
+NULL != ''
+
+NULL will break SUM, AVG, COUNT(column)
+
+Examples:
+
+COUNT(*) counts NULL
+COUNT(column) ignores NULL
+
+5️⃣ LIKE + Wildcards
+
+You must be perfect with pattern matching:
+
+Pattern	Meaning
+LIKE 'A%'	Starts with A
+LIKE '%A'	Ends with A
+LIKE '%A%'	Contains A
+LIKE '_A%'	Second letter A
+6️⃣ DISTINCT — When to Use and When NOT
+
+Use DISTINCT only when you want unique rows.
+
+Never use DISTINCT with GROUP BY — both do uniqueness.
+
+7️⃣ Subqueries (Basic Understanding)
+
+Subqueries inside WHERE are important because you can replace HAVING with them (as you want right now).
+
+Example:
+
+SELECT department
+FROM emp
+WHERE salary > (SELECT AVG(salary) FROM emp);
+
+8️⃣ Aliases — MUST KNOW
+
+You should always name aggregates:
+
+SELECT SUM(salary) AS total_salary
+
+
+Otherwise SQL becomes confusing and some queries fail.
+
+9️⃣ ORDER BY Must Use Selected Column or Expression
+
+Example:
+
+SELECT department, COUNT(*) AS total
+FROM emp
+GROUP BY department
+ORDER BY total DESC;
+
+🔟 Practice Reading Query Results in Your Mind
+
+Before running the query, ask:
+
+What is the WHERE filtering?
+
+What column groups?
+
+What aggregates apply?
+
+What will the final rows look like?
+
+This will make your SQL very strong.
+
+👇 Why I say you NEED this?
+
+From your earlier queries I noticed:
+
+You used WHERE with aggregates ❌
+
+You selected columns without grouping ❌
+
+You added salary column along with COUNT ❌
+
+You missed aliases in some queries ❌
+
+You replaced HAVING with wrong logic ❌
+
+You forgot ORDER BY in many result-based queries
+
+This is normal — and I will fix all of this for you.
+
+👍 What To Do Next?
+
+If you want, I will create:
+
+▶ A 3-day SQL Foundation Plan
+
+or
+
+▶ A checklist PDF of “SQL Rules You Must Never Forget”
+
+or
+
+▶ Explain each of the 10 concepts with your own marketing table examples
