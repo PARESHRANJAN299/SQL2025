@@ -1,0 +1,50 @@
+🤓 Quick Formula to Remember
+Words	Spaces	Pattern
+1 word	0 spaces	no LIKE needed
+2 words	1 space	LIKE '% %' AND NOT LIKE '% % %'
+3 words	2 spaces	LIKE '% % %' AND NOT LIKE '% % % %'
+4 words	3 spaces	LIKE '% % % %' AND NOT LIKE '% % % % %'
+
+✅ Meaning of % % %
+
+The pattern:
+
+% % %
+
+
+Is actually this:
+
+%  ← anything before first space  
+(space)
+%  ← anything between spaces  
+(space)
+%  ← anything after second space
+
+
+So the pattern matches:
+
+anything + space + anything + space + anything
+
+👉 This means at least two separate spaces in the text.
+
+✅ Example of how % % % works
+Matches:
+"Apple iPhone 15"          → Apple␣iPhone␣15   (2 spaces)
+"Samsung Galaxy S21 Ultra" → Samsung␣Galaxy␣S21␣Ultra (3 spaces)
+"HP Pro Laptop Bag"        → HP␣Pro␣Laptop␣Bag (3 spaces)
+
+
+All these match because they have 2 or more spaces.
+
+❌ Does NOT match:
+"iPhone 15"        → 1 space only
+"PowerBank"        → no space
+"USB Cable"        → 1 space only
+
+⭐ So yes:
+% % % = string containing two or more spaces
+
+And because 2 spaces = 3 words, this works perfectly for:
+
+❌ Excluding 3-word or 4-word names
+✔ Keeping only 2-word names
