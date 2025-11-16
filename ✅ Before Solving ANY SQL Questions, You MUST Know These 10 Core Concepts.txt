@@ -135,31 +135,18 @@ This will make your SQL very strong.
 👇 Why I say you NEED this?
 
 From your earlier queries I noticed:
-
 You used WHERE with aggregates ❌
-
 You selected columns without grouping ❌
-
 You added salary column along with COUNT ❌
-
 You missed aliases in some queries ❌
-
 You replaced HAVING with wrong logic ❌
-
 You forgot ORDER BY in many result-based queries
-
 This is normal — and I will fix all of this for you.
 
 👍 What To Do Next?
-
 If you want, I will create:
-
 ▶ A 3-day SQL Foundation Plan
-
 or
-
 ▶ A checklist PDF of “SQL Rules You Must Never Forget”
-
 or
-
 ▶ Explain each of the 10 concepts with your own marketing table examples
