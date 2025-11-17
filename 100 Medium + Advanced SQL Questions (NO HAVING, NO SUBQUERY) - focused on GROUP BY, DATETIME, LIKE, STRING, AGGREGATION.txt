@@ -1,0 +1,215 @@
+Here are 100 Medium + Advanced SQL Questions (NO HAVING, NO SUBQUERY), fully suitable for Data Analyst interview practice, grouped into 5 Tasks.
+
+👉 All questions are based on your table: Product_Data
+👉 Focused on GROUP BY, LIKE, AGGREGATES, WHERE, ORDER BY, TOP, STRING FUNCTIONS, DATE FUNCTIONS
+👉 NO HAVING, NO SUBQUERY — COMPLETELY SAFE
+
+✅ TASK 1 — Filtering, LIKE, Pattern Matching (20 Questions)
+
+Fetch products where product_name contains at least one space.
+
+Fetch products where product_name contains more than one space.
+
+Fetch products whose product_name starts with a vowel.
+
+Fetch products whose product_name ends with a vowel.
+
+Fetch products where brand starts and ends with the same letter.
+
+Fetch products where the last character of product_name is a digit.
+
+Fetch products where price ends in 99.
+
+Fetch products where rating is between 3.5 and 4.7.
+
+Fetch products where stock is a multiple of 5.
+
+Fetch all products where product_name contains the word “Pro”.
+
+Fetch products where product_name contains exactly 2 words.
+
+Fetch all products where category contains a lowercase letter.
+
+Fetch products where brand has at least one uppercase letter.
+
+Fetch products where product_name contains a hyphen (-).
+
+Fetch products where product_name contains special characters.
+
+Fetch products where brand length is more than 6 characters.
+
+Fetch products where product_name length is even.
+
+Fetch products where product_name length is odd.
+
+Fetch products where rating has 1 decimal place.
+
+Fetch products where product_name contains repeated letters (Ex: “aa”, “bb”).
+
+✅ TASK 2 — Aggregations + Grouping (20 Questions)
+
+Show total number of products in each brand.
+
+Show total number of products in each category.
+
+Show total stock per brand.
+
+Show total stock per category.
+
+Show average price per brand.
+
+Show average price per category.
+
+Show maximum price per brand.
+
+Show minimum price per brand.
+
+Show maximum stock per brand.
+
+Show sum of price for each brand.
+
+Show sum of price for each category.
+
+Show total inventory value (price × stock) per brand.
+
+Show total inventory value per category.
+
+Show count of products per launch year (extract year).
+
+Show average rating per brand.
+
+Show count of products grouped by rating rounded down (FLOOR).
+
+Show count of products where price > 20,000 per brand.
+
+Show count of products where stock > 50 per category.
+
+Show total stock per rating value.
+
+Show max rating per category.
+
+✅ TASK 3 — Date & Time Advanced (20 Questions)
+
+Fetch products launched in the year 2022.
+
+Fetch products launched in the year 2023.
+
+Fetch products launched in the year 2024.
+
+Fetch products launched before 2023.
+
+Fetch products launched after 2023.
+
+Fetch products launched in the first quarter (Jan–Mar).
+
+Fetch products launched in the second quarter (Apr–Jun).
+
+Fetch products launched in the third quarter (Jul–Sep).
+
+Fetch products launched in the fourth quarter (Oct–Dec).
+
+Fetch products launched in the last 6 months.
+
+Fetch products launched on weekends (Saturday/Sunday).
+
+Fetch products launched on weekdays.
+
+Fetch products launched on the first day of any month.
+
+Fetch products launched on the last day of any month.
+
+Fetch products where launch_date month is July.
+
+Fetch products where launch_date day is 15.
+
+Fetch products where launch_date falls on an odd date.
+
+Fetch products where launch_date falls on an even date.
+
+Fetch products where launch year and rating have the same first digit.
+
+Fetch products where launch month number matches stock % 12.
+
+✅ TASK 4 — STRING functions, Filtering, Operators (20 Questions)
+
+Fetch products where LEFT(product_name, 3) = LEFT(brand, 3).
+
+Fetch products where RIGHT(product_name, 2) = RIGHT(brand, 2).
+
+Fetch products where the first word starts with ‘S’.
+
+Fetch products where the last word starts with ‘A’.
+
+Fetch products where product_name has more than 12 characters.
+
+Fetch products where product_name has less than 8 characters.
+
+Fetch products where product_name contains double spaces.
+
+Fetch products where brand appears anywhere inside product_name.
+
+Fetch products where product_name contains exactly 3 words.
+
+Fetch products where product_name contains no spaces.
+
+Fetch products where product_name has at least one uppercase letter.
+
+Fetch products where product_name has at least one lowercase letter.
+
+Fetch products where price has exactly 5 digits.
+
+Fetch products where stock has 2 digits.
+
+Fetch products where price % 100 = 0.
+
+Fetch products where stock % 2 = 0 (even stock).
+
+Fetch products where stock % 2 = 1 (odd stock).
+
+Fetch products where rating × stock > 300.
+
+Fetch products where price – stock > 10000.
+
+Fetch products where LEN(product_name) = LEN(brand) + 5.
+
+✅ TASK 5 — ORDER BY, TOP, Mixed Medium-Advanced Logic (20 Questions)
+
+List top 5 highest-priced products.
+
+List top 5 lowest-priced products.
+
+List top 5 products with highest stock.
+
+List top 5 products with lowest stock.
+
+List top 10 most expensive brands (based on average price).
+
+List products ordered by rating (high → low).
+
+List products ordered by price per unit stock (price/stock).
+
+List products ordered by launch_date (newest first).
+
+List products ordered by launch_date (oldest first).
+
+List the first 5 products alphabetically by product_name.
+
+List the last 5 products alphabetically by brand.
+
+Sort brands by total stock (use GROUP BY).
+
+Sort categories by their average price.
+
+Sort rating groups by total product count.
+
+Sort products by length of product_name.
+
+List products where price is within top 20% of all products.
+
+List products where stock is within bottom 20%.
+
+List products sorted by (price × rating).
+
+List products sorted by (stock × rating).
+
+Sort products first by brand, then by price descending.
