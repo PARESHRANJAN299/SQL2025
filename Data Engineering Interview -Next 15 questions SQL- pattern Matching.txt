@@ -1,0 +1,34 @@
+✅ 10 NEW LIKE-Pattern Interview Questions
+
+(Highly asked in Data Engineering & Data Analyst interviews)
+
+1️⃣ Fetch product_names that contain ONLY alphabets (no digits, no special characters).
+
+(One of your previous weak areas — included)
+
+2️⃣ Fetch product_names that contain ONLY digits (no letters, no symbols).
+
+(Also one of your mistakes earlier)
+
+3️⃣ Fetch product_names where the last word starts with an uppercase letter.
+
+(You made this wrong before — included)
+
+4️⃣ Fetch product_names that contain at least one special character (@ # $ % & ! _ -).
+
+(Also added from your mistake list)
+
+5️⃣ Fetch product_names where the first two characters are both digits.
+6️⃣ Fetch product_names where the last two characters are both letters.
+7️⃣ Fetch product_names where the third character is NOT a letter.
+
+(e.g., digit or special character)
+
+8️⃣ Fetch product_names that contain exactly ONE digit anywhere.
+
+(Very common DE/DA interview question)
+
+9️⃣ Fetch product_names where the first word ends with a vowel.
+🔟 Fetch product_names where the last character is a special character.
+
+(Real-world data cleaning/testing question)
