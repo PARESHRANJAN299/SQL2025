@@ -1,0 +1,19 @@
+✅ TOP 15 SQL LIKE Pattern Questions (Interview Focus)
+
+(Most asked in Data Engineer + Data Analyst interviews)
+
+1️⃣ Fetch rows where product_name starts with ‘S’.
+2️⃣ Fetch rows where product_name ends with a digit.
+3️⃣ Fetch rows where product_name contains the substring ‘Pro’.
+4️⃣ Fetch rows where product_name contains at least one space.
+5️⃣ Fetch product_names that contain only alphabets (no digits or symbols).
+6️⃣ Fetch product_names that contain only digits.
+7️⃣ Fetch product_names where the second character is ‘a’.
+8️⃣ Fetch product_names that contain exactly 2 words.
+9️⃣ Fetch product_names that contain at least one special character (@,#,$,%,&,!).
+🔟 Fetch product_names that contain repeating letters (like “aa”, “bb”).
+11️⃣ Fetch product_names that start with a vowel (a,e,i,o,u).
+12️⃣ Fetch product_names that do NOT contain any digits.
+13️⃣ Fetch product_names where the last character is NOT a letter.
+14️⃣ Fetch product_names where the first and last letters are the same.
+15️⃣ Fetch product_names where the last word starts with an uppercase letter.
