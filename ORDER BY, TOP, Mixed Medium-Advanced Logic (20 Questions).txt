@@ -1,0 +1,41 @@
+✅ TASK 5 — ORDER BY, TOP, Mixed Medium-Advanced Logic (20 Questions)
+
+List top 5 highest-priced products.
+
+List top 5 lowest-priced products.
+
+List top 5 products with highest stock.
+
+List top 5 products with lowest stock.
+
+List top 10 most expensive brands (based on average price).
+
+List products ordered by rating (high → low).
+
+List products ordered by price per unit stock (price/stock).
+
+List products ordered by launch_date (newest first).
+
+List products ordered by launch_date (oldest first).
+
+List the first 5 products alphabetically by product_name.
+
+List the last 5 products alphabetically by brand.
+
+Sort brands by total stock (use GROUP BY).
+
+Sort categories by their average price.
+
+Sort rating groups by total product count.
+
+Sort products by length of product_name.
+
+List products where price is within top 20% of all products.
+
+List products where stock is within bottom 20%.
+
+List products sorted by (price × rating).
+
+List products sorted by (stock × rating).
+
+Sort products first by brand, then by price descending.
